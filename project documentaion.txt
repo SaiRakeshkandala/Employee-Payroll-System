@@ -1,0 +1,33 @@
+# Project Documentation: Employee Payroll System
+
+## Objective
+The objective of this project is to create a Python-based Employee Payroll System to manage employee records, calculate salaries, and generate payroll reports.
+
+---
+
+## Code Structure
+### 1. `employee.py`
+- **`Employee` Class**:
+  - Attributes:
+    - `emp_id`: Unique identifier for an employee.
+    - `name`: Name of the employee.
+    - `position`: Job title.
+    - `basic_salary`: Monthly basic salary.
+    - `hours_worked`: Number of hours worked.
+    - `hourly_rate`: Hourly wage.
+  - Methods:
+    - `display_details`: Displays employee details.
+    - `update_details`: Updates employee attributes.
+    - `calculate_salary`: Calculates salary based on hours worked and hourly rate.
+    - `generate_payslip`: Generates a detailed payslip.
+
+### 2. `main.py`
+- Implements CRUD operations and generates reports.
+- Provides a menu-driven interface for user interaction.
+
+---
+
+## Salary Calculation
+The salary is calculated using the formula:
+```plaintext
+Salary = Basic Salary + (Hourly Rate * Hours Worked)
